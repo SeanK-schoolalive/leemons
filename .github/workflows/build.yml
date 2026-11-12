@@ -1,0 +1,34 @@
+name: Publish packages to NPM
+
+on:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: Packages to pass to scripts/patch_publish_v2.sh
+        required: true
+        type: string
+      npm_tag:
+        description: NPM dist-tag to publish under
+        required: true
+        default: latest
+        type: string
+      git_branch:
+        description: Branch to push version-bump commits to
+        required: true
+        type: string
+      git_tag:
+        description: Git tag to create for private-plugins
+        required: true
+        type: string
+
+jobs:
+  publish:
+    uses: ./.github/workflows/packages-to-npm-v2.yml
+    with:
+      PACKAGES: ${{ inputs.packages }}
+      NPM_TAG: ${{ inputs.npm_tag }}
+      GIT_BRANCH: ${{ inputs.git_branch }}
+      GIT_TAG: ${{ inputs.git_tag }}
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GH_PAT: ${{ secrets.GH_PAT }}
