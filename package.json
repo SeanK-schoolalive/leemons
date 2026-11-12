@@ -1,26 +1,26 @@
 {
-  "name": "leemons-monorepo",
-  "description": "The powerful, flexible, friendly Learning Experience Platform you're waiting for",
+  "name": "classalivelemon",
+  "description": "",
   "version": "1.23.0",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/leemonade/leemons.git"
+    "url": "https://github.com/Seank-schoolalive/leemons.git"
   },
   "bugs": {
-    "url": "https://github.com/leemonade/leemons/issues"
+    "url": "https://github.com/Seank-schoolalive/leemons/issues"
   },
   "author": {
-    "email": "hi@leemons.io",
-    "name": "Leemons Edtech Solutions",
-    "url": "https://www.leemons.io"
+    "email": "",
+    "name": "",
+    "url": ""
   },
   "maintainers": [
     {
-      "email": "hi@leemons.io",
-      "name": "Leemons Edutech Solutions",
-      "url": "https://www.leemons.io"
+      "email": "",
+      "name": "",
+      "url": ""
     }
   ],
   "workspaces": [
