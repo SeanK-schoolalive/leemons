@@ -23,7 +23,7 @@ on:
 
 jobs:
   publish:
-    uses: ./.github/workflows/packages-to-npm-v2.yml
+    uses: ./.github/workflows/packages-to-npm.yml
     with:
       PACKAGES: ${{ inputs.packages }}
       NPM_TAG: ${{ inputs.npm_tag }}
